@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人數位名片</title>
+    <style>
+        :root {
+            --bg-color: #f4f6f8;
+            --text-color: #333333;
+            --primary-color: #8fa89b; /* 柔和莫蘭迪綠 */
+            --accent-color: #d1bfa7;  /* 燕麥奶茶色 */
+        }
+        body {
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            background: #ffffff;
+            max-width: 450px;
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            padding: 30px;
+            text-align: center;
+        }
+        .avatar {
+            width: 90px;
+            height: 90px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+        }
+        h1 { margin: 10px 0 5px; font-size: 24px; }
+        p.subtitle { color: #666; margin-bottom: 25px; font-size: 14px; }
+        .section { text-align: left; margin-bottom: 20px; }
+        .section h3 { border-left: 4px solid var(--primary-color); padding-left: 8px; margin-bottom: 10px; }
+        .tag {
+            display: inline-block;
+            background: var(--bg-color);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin: 4px;
+            border: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="avatar"></div>
+        <h1>我的 AI 網頁作業</h1>
+        <p class="subtitle">多媒體與網頁前端設計成果展示</p>
+        
+        <div class="section">
+            <h3>專業技能 (Skills)</h3>
+            <span class="tag">3D 骨架繫結與權重繪製</span>
+            <span class="tag">動態視覺節奏曲線調校</span>
+            <span class="tag">AI 提示詞工程應用</span>
+        </div>
+        
+        <div class="section">
+            <h3>研究與審美興趣</h3>
+            <span class="tag">現代電影敘事與符號學</span>
+            <span class="tag">莫蘭迪低飽和度空間美學</span>
+            <span class="tag">江戶時代藝術與浮世繪</span>
+        </div>
+    </div>
+</body>
+</html>
